@@ -13,7 +13,7 @@
 
 .main-buttons {
     background: url("../images/movie-background.jpg") no-repeat center center;
-    height: 650px;
+    
     background-size: cover;
 }
 
@@ -23,7 +23,7 @@
     background-color: goldenrod;
     padding: 10px;
     border-radius: 5px;
-    margin: 200px 200px 100px 200px; 
+    margin: 200px; 
     color: white;
     -webkit-appearance: button;
     -moz-appearance: button;
@@ -67,4 +67,32 @@ footer {
 
 footer li:hover {
     opacity: 0.7;
+}
+
+.score-goals{
+    background: url("../images/movie-background.jpg") no-repeat center center;
+    height: 600px;
+    background-size: cover;
+}
+
+.score-discription {
+    background-color: rgba(218, 165, 32, 0.8);
+    border-radius: 5px;
+    padding: 25px;
+    margin: 100px;
+    padding: 50px;
+    
+
+}
+
+.score-discription h2 ,h3 {
+    margin-top: 30px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+.score-discription p {
+    margin-top: 35px;
+    color: white;
 }
