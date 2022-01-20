@@ -1,7 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Titillium+Web:wght@300&display=swap");
+
 * {
     margin: 0;
     padding: 0;
     border: none;
+}
+
+body {
+    font-family: Lato, "sans-serif";
+    font-weight: 300;
+    
+}
+
+h1,
+h2 {
+    font-family: "Titillium Web", sans-serif;
+    
+    letter-spacing: 5px;
+ 
 }
 
 .heading {
@@ -71,14 +87,13 @@ footer li:hover {
 
 .score-goals{
     background: url("../images/movie-background.jpg") no-repeat center center;
-    height: 600px;
+    padding: 100px;
     background-size: cover;
 }
 
 .score-discription {
     background-color: rgba(218, 165, 32, 0.8);
     border-radius: 5px;
-    padding: 25px;
     margin: 100px;
     padding: 50px;
     
@@ -95,4 +110,46 @@ footer li:hover {
 .score-discription p {
     margin-top: 35px;
     color: white;
+}
+
+.scoregoals-buttons {
+    font-size: 0.9rem;
+    text-decoration: none;
+    background-color: goldenrod;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 35px; 
+    color: white;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    width: 100px;
+    height:50px;
+}
+
+.score-discription a {
+   text-align: center;
+}
+
+.score-discription a:hover{
+ 
+    opacity: .7;
+}
+
+
+.scoregoals-buttons i {
+    font-size: 0.9rem;
+  
+    margin-top: 10px;
+}
+
+.scoregoals-right {
+    float:right;
+}
+
+.quiz-buttons {
+    background: url("../images/movie-background.jpg") no-repeat center center;
+    height: 600px;
+    background-size: cover;
+
 }
