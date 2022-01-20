@@ -24,12 +24,21 @@
     padding: 10px;
     border-radius: 5px;
     margin: 200px 200px 100px 200px; 
-    color: black;
+    color: white;
     -webkit-appearance: button;
     -moz-appearance: button;
     appearance: button;
     width: 150px;
     height:75px;
+}
+
+.main-buttons a {
+   text-align: center;
+   font-size: 1.5rem;
+}
+
+.main-buttons i {
+    margin-top: 10px;
 }
 
 .main-buttons a:hover {
