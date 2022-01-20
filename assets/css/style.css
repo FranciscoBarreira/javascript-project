@@ -11,6 +11,12 @@
     color:white;
 }
 
+.main-buttons {
+    background: url("../images/movie-background.jpg") no-repeat center center;
+    height: 650px;
+    background-size: cover;
+}
+
 .start {
     font-size: 0.9rem;
     text-decoration: none;
@@ -32,3 +38,24 @@
     opacity: .8;
 }
 
+footer {
+    background-color: goldenrod;
+    height: 75px;
+    text-align: center;
+}
+
+#footer-socials li {
+    display: inline-block;
+    
+    margin: 30px;
+}
+
+#footer-socials a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+}
+
+footer li:hover {
+    opacity: 0.7;
+}
