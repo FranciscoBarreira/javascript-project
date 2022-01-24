@@ -162,6 +162,7 @@ footer li:hover {
     color: white;
     border-radius: 5px;
     margin-bottom: 50px;
+    font-family: Lato, "sans-serif";
 }
 
 .quiz-container{
@@ -178,4 +179,37 @@ footer li:hover {
 
 .next {
     float: right;
+}
+
+.home-button {
+    text-decoration: none;
+    background-color: goldenrod;
+    width:200px;
+    height:50px;
+    line-height: 50px;
+    font-size: .9rem;
+    text-align: center;
+    color: white;
+    font-family: Lato, "sans-serif";
+    font-weight: 300;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+}
+
+.nav-buttons {
+    justify-content:center;
+    align-items:center;
+    
+}
+
+.home-button:hover {
+    opacity: .7;
+
+}
+
+.next:hover {
+    opacity: .7;
 }
