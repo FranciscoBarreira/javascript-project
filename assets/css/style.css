@@ -213,3 +213,38 @@ footer li:hover {
 .next:hover {
     opacity: .7;
 }
+
+#question {
+    color: white;
+    margin: 100px 50px 100px 50px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.right-button {
+    float: right;
+    margin-right: 100px;
+}
+
+.left-button {
+    
+    margin-left: 100px;
+}
+
+.results {
+   color: white;
+   font-weight: bold;
+
+}
+
+.results-right {
+    float: right;
+}
+
+#correct {
+    color: green;
+}
+
+#incorrect {
+    color:red;
+}
