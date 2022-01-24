@@ -151,5 +151,31 @@ footer li:hover {
     background: url("../images/movie-background.jpg") no-repeat center center;
     height: 600px;
     background-size: cover;
+    padding: 150px;
+}
 
+.button {
+    background-color: goldenrod;
+    width:200px;
+    height:50px;
+    padding:10px;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+
+.quiz-container{
+    margin-top: 150px;
+    background-color: rgba(218, 165, 32, 0.6);
+}
+
+.answers{
+    justify-content:center;
+    align-items:center;
+    display:flex;
+    
+}
+
+.next {
+    float: right;
 }
