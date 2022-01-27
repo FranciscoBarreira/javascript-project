@@ -284,4 +284,34 @@ const questions = [
         ]
     },
 
+    {
+        question: "Who wrote the score for The Good, The Bad and the Ugly?",
+        answers: [
+           { option: "John Williams", correct: false},
+           { option: "Hanz Zimmer", correct: false},
+           { option: "Ennio Morricone", correct: true},
+           { option: "Henry Mancini", correct: false}
+        ]
+    },
+
+    {
+        question: "In Seven, what was in the Box?",
+        answers: [
+           { option: "The head of Det. Mills wife", correct: true},
+           { option: "Nothing", correct: false},
+           { option: "Det. Mills Dog", correct: false},
+           { option: "Anthrax", correct: false}
+        ]
+    },
+
+    {
+        question: "What is the first rule of Fight Club?",
+        answers: [
+           { option: "Bring Your Own Booze", correct: false},
+           { option: "You do not talk about Fight Club", correct: true},
+           { option: "Phones must be in silent mode", correct: false},
+           { option: "You must show a negative Covid test", correct: false}
+        ]
+    },
+
 ]
