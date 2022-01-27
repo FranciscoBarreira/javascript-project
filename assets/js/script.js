@@ -1,19 +1,32 @@
-const randomQuestions, currentIndex 
+const launchQuiz = document.getElementById("start-quiz")
+
+let randomQuestions, currentIndex 
+
+const questionElement = document.getElementById("question")
+const answersElement = document.getElementById("answers")
+
+launchQuiz.addEventListener("click", startQuiz)
 
 
 function startQuiz() {
-nextQuestion() 
-currentIndex = 0
-randomQuestions = questions.sort (() => Math.random() -0.5)
+   console.log("startedquiz")
+   nextQuestion() 
+   currentIndex = 0
+   randomQuestions = questions.sort (() => Math.random() -0.5)
 }
 
 function nextQuestion() {
-
+   currentQuestion(randomQuestions[currentIndex])
 }
+
+function currentQuestion (question) {
+   questionElement.innerText= questions.question
+} 
+
 
 const questions = [
     {
-        question: "In which movie series does Michael Mayer terrorize the town of?",
+        question: "In which movie series does Michael Mayer terrorize the villagers?",
         answers: [
            { option: "Friday the 13th", correct: false},
            { option: "Halloween", correct: true},
