@@ -9,11 +9,37 @@ if (document.readyState === "complete") {
 const question= document.getElementById('question');
 const options= Array.from(document.querySelectorAll('.option-content'));
 
+let listOfQuestions = []
+let currentQuestion = {}
+let questionsAnswered
+const gameQuestions= 20
 
 function startQuiz() {
    console.log("startedquiz")
-   randomQuestions = questions.sort (() => Math.random() -0.5)
+   questionsAnswered= 0
+   listOfQuestions = [...questions]
+   nextQuestion()
+}
 
+function nextQuestion () {
+ 
+ if (listOfQuestions.length===0 || questionsAnswered > gameQuestions) {
+      return window.location.assign('x/html')
+ }
+ questionsAnswered++
+
+ const index = Math.floor(Math.random()* listOfQuestions.length)
+ currentQuestion = listOfQuestions[index]
+ question.innerText = currentQuestion.question
+
+ options.forEach(option => {
+      const number = option.dataset ['number']
+      option.innerText =currentQuestion['option' + number] 
+    
+ }
+ listOfQuestions.splice(index,1)
+
+ 
 }
 
 
