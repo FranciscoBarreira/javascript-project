@@ -1,27 +1,20 @@
-const launchQuiz = document.getElementById("start-quiz")
+if (document.readyState === "complete") {
+   
+    startQuiz();
+} else {
+    
+    window.addEventListener("DOMContentLoaded", startQuiz);
+}
 
-let randomQuestions, currentIndex 
-
-const questionElement = document.getElementById("question")
-const answersElement = document.getElementById("answers")
-
-launchQuiz.addEventListener("click", startQuiz)
+const question= document.getElementById('question');
+const options= Array.from(document.querySelectorAll('.option-content'));
 
 
 function startQuiz() {
    console.log("startedquiz")
-   nextQuestion() 
-   currentIndex = 0
    randomQuestions = questions.sort (() => Math.random() -0.5)
-}
 
-function nextQuestion() {
-   currentQuestion(randomQuestions[currentIndex])
 }
-
-function currentQuestion (question) {
-   questionElement.innerText= questions.question
-} 
 
 
 const questions = [
