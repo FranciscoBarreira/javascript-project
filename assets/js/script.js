@@ -372,11 +372,13 @@ const next = document.getElementsByClassName('next')[0];
 var index = 0;
   
 next.addEventListener("click", () => {
-    start = false;
+    
     if (index < 29) {
         index++;
         startQuiz(index);
-        console.log(index);
+        
+    } else {
+        return window.location.assign('x/html')
     }
   
 })
