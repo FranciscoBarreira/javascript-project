@@ -214,7 +214,7 @@ footer li:hover {
     opacity: .7;
 }
 
-#question {
+#question-displayed {
     color: white;
     margin: 100px 50px 100px 50px;
     font-size: 2rem;

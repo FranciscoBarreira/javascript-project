@@ -1,62 +1,7 @@
-
-var quiz = true;
-  
-
-function startquiz(index) {
-  
-    
-  
-    
-    const questionDisplayed = document.getElementById("question-displayed");
-  
-  
-  
-    questionDisplayed.innerText = Questions[index].question;
-  
-    
-    const answerOne = document.getElementById("answer-one");
-    const answertwo = document.getElementById("answer-two");
-    const answerThree = document.getElementById("answer-three");
-    const answerFour = document.getElementById("answer-four");
-  
-  
-    
-    answerOne.innerText = Questions[index].answers[0].option;
-    answerTwo.innerText = Questions[index].answers[1].option;
-    answerThree.innerText = Questions[index].answers[2].option;
-    answerFour.innerText = Questions[index].answers[3].option;
-  
-   
-    answerOne.value = Questions[index].answers[0].correct;
-    answerTwo.value = Questions[index].answers[1].correct;
-    answerThree.value = Questions[index].answers[2].correct;
-    answerFour.value = Questions[index].answers[3].correct;
-  
-    
-}
-  
-if (start) {
-    startQuiz("0");
-}
-  
-
-const next = document.getElementsByClassName('next')[0];
-var index = 0;
-  
-next.addEventListener("click", () => {
-    start = false;
-    if (index < 29) {
-        index++;
-        startQuiz(index);
-        console.log(index);
-    }
-  
-})
-
 const questions = [
     {
         index: 0,
-        question: "In which movie series does Michael Mayer terrorize the villagers?",
+        question: "In which movie series does Michael Myers terrorize the villagers?",
         answers: [
            { option: "Friday the 13th", correct: false},
            { option: "Halloween", correct: true},
@@ -387,3 +332,52 @@ const questions = [
     },
 
 ]
+
+
+var quiz = true
+
+function startQuiz(index) {
+  
+    const questionDisplayed = document.getElementById("question-displayed");
+  
+    questionDisplayed.innerText = questions[index].question;
+  
+    
+    const answerOne = document.getElementById("answer-one");
+    const answerTwo = document.getElementById("answer-two");
+    const answerThree = document.getElementById("answer-three");
+    const answerFour = document.getElementById("answer-four");
+  
+  
+    
+    answerOne.innerText = questions[index].answers[0].option;
+    answerTwo.innerText = questions[index].answers[1].option;
+    answerThree.innerText = questions[index].answers[2].option;
+    answerFour.innerText = questions[index].answers[3].option;
+  
+   
+    answerOne.value = questions[index].answers[0].correct;
+    answerTwo.value = questions[index].answers[1].correct;
+    answerThree.value = questions[index].answers[2].correct;
+    answerFour.value = questions[index].answers[3].correct;
+  
+    
+}
+  
+if (quiz) {
+    startQuiz("0");
+}
+  
+const next = document.getElementsByClassName('next')[0];
+var index = 0;
+  
+next.addEventListener("click", () => {
+    start = false;
+    if (index < 29) {
+        index++;
+        startQuiz(index);
+        console.log(index);
+    }
+  
+})
+
