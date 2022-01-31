@@ -1,50 +1,61 @@
-if (document.readyState === "complete") {
+
+var quiz = true;
+  
+
+function startquiz(index) {
+  
+    
+  
+    
+    const questionDisplayed = document.getElementById("question-displayed");
+  
+  
+  
+    questionDisplayed.innerText = Questions[index].question;
+  
+    
+    const answerOne = document.getElementById("answer-one");
+    const answertwo = document.getElementById("answer-two");
+    const answerThree = document.getElementById("answer-three");
+    const answerFour = document.getElementById("answer-four");
+  
+  
+    
+    answerOne.innerText = Questions[index].answers[0].option;
+    answerTwo.innerText = Questions[index].answers[1].option;
+    answerThree.innerText = Questions[index].answers[2].option;
+    answerFour.innerText = Questions[index].answers[3].option;
+  
    
-    startQuiz();
-} else {
+    answerOne.value = Questions[index].answers[0].correct;
+    answerTwo.value = Questions[index].answers[1].correct;
+    answerThree.value = Questions[index].answers[2].correct;
+    answerFour.value = Questions[index].answers[3].correct;
+  
     
-    window.addEventListener("DOMContentLoaded", startQuiz);
 }
-
-const question= document.getElementById('question');
-const options= Array.from(document.querySelectorAll('.option-content'));
-
-let listOfQuestions = []
-let currentQuestion = {}
-let questionsAnswered
-const gameQuestions= 20
-
-function startQuiz() {
-   console.log("startedquiz")
-   questionsAnswered= 0
-   listOfQuestions = [...questions]
-   nextQuestion()
+  
+if (start) {
+    startQuiz("0");
 }
+  
 
-function nextQuestion () {
- 
- if (listOfQuestions.length===0 || questionsAnswered > gameQuestions) {
-      return window.location.assign('x/html')
- }
- questionsAnswered++
-
- const index = Math.floor(Math.random()* listOfQuestions.length)
- currentQuestion = listOfQuestions[index]
- question.innerText = currentQuestion.question
-
- options.forEach(option => {
-      const number = option.dataset ['number']
-      option.innerText =currentQuestion['option' + number] 
-    
- }
- listOfQuestions.splice(index,1)
-
- 
-}
-
+const next = document.getElementsByClassName('next')[0];
+var index = 0;
+  
+next.addEventListener("click", () => {
+    start = false;
+    if (index < 29) {
+        index++;
+        startQuiz(index);
+        console.log(index);
+    }
+  
+})
 
 const questions = [
     {
+        index: 0,
         question: "In which movie series does Michael Mayer terrorize the villagers?",
         answers: [
            { option: "Friday the 13th", correct: false},
@@ -56,6 +67,7 @@ const questions = [
 
 
     {
+        index: 1,
         question: "Which is the highest rated movie of all time, accoreding to IMDB?",
         answers: [
            { option: "Shawshank Redemption", correct: true},
@@ -66,6 +78,7 @@ const questions = [
     },
 
     {
+        index: 2,
         question: "Who plays Lara Croft in the 2018 Tomb Raider?",
         answers: [
            { option: "Lily James", correct: false},
@@ -76,6 +89,7 @@ const questions = [
     },
 
     {
+        index: 3,
         question: "Which iconic Formula 1 rivalry is depicted in Rush?",
         answers: [
            { option: "Hunt vs Lauda", correct: true},
@@ -86,6 +100,7 @@ const questions = [
     },
 
     {
+        index: 4,
         question: "Which actor siad the legendary line 'Hasta la vista, baby'?",
         answers: [
            { option: "Jackie Chan", correct: false},
@@ -96,6 +111,7 @@ const questions = [
     },
 
     {
+        index: 5,
         question: "Before becoming Captain Marvel, which movie granted Brie Larson an oscar?",
         answers: [
            { option: "Spotlight", correct: false},
@@ -106,6 +122,7 @@ const questions = [
     },
 
     {
+        index: 6,
         question: "Which movie sees Brad Pitt battling hordes of undead zombies to save the planet?",
         answers: [
            { option: "World War Z", correct: true},
@@ -116,6 +133,7 @@ const questions = [
     },
 
     {
+        index: 7,
         question: "Who portrayed Stephen Hawking in the theory of Everything?",
         answers: [
            { option: "Oscar Isacc", correct: false},
@@ -126,6 +144,7 @@ const questions = [
     },
 
     {
+        index: 8,
         question: "Which is the highest grossing film of all time?",
         answers: [
            { option: "Avengers", correct: false},
@@ -136,6 +155,7 @@ const questions = [
     },
 
     {
+        index: 9,
         question: "Which actress won more oscars during their career?",
         answers: [
            { option: "Katherine Hepburn", correct: true},
@@ -146,6 +166,7 @@ const questions = [
     },
 
     {
+        index: 10,
         question: "Where can you find Jack Black using very unique methods of teaching?",
         answers: [
            { option: "High School Musical", correct: false},
@@ -156,6 +177,7 @@ const questions = [
     },
 
     {
+        index: 11,
         question: "How many oscars did the Lord of the Rings Trilogy won?",
         answers: [
            { option: "11", correct: false},
@@ -166,6 +188,7 @@ const questions = [
     },
 
     {
+        index: 12,
         question: "Which actress rose to fame after starring in The Wolf of Wall Street?",
         answers: [
            { option: "Margot Robbie", correct: true},
@@ -176,6 +199,7 @@ const questions = [
     },
 
     {
+        index: 13,
         question: "Which of these movies was not directed by Christopher Nolan?",
         answers: [
            { option: "Memento", correct: false},
@@ -186,6 +210,7 @@ const questions = [
     },
 
     {
+        index: 14,
         question: "Which is the highest rated movie of all time, accoreding to Rotten Tomatoes?",
         answers: [
            { option: "It happened One Night", correct: true},
@@ -196,6 +221,7 @@ const questions = [
     },
 
     {
+        index: 15,
         question: "Which actor won the most oscars during their career?",
         answers: [
            { option: "Tom Hanks", correct: false},
@@ -207,6 +233,7 @@ const questions = [
 
 
     {
+        index: 16,
         question: "Which was the first animated movie Disney ever released?",
         answers: [
            { option: "Bambi", correct: false},
@@ -217,6 +244,7 @@ const questions = [
     },
 
     {
+        index: 17,
         question: "Which director was once most known for starring in Westerns?",
         answers: [
            { option: "Henry Fonda", correct: false},
@@ -227,6 +255,7 @@ const questions = [
     },
 
     {
+        index: 18,
         question: "In which movie can you find Robert de Niro asking 'You talkin' to me'?",
         answers: [
            { option: "Goodfellas", correct: false},
@@ -237,6 +266,7 @@ const questions = [
     },
 
     {
+        index: 19,
         question: "In Citizen Kane, what does Charles Foster Kane say in his deathbed?",
         answers: [
            { option: "If there is a God, give me a sign", correct: false},
@@ -247,6 +277,7 @@ const questions = [
     },
 
     {
+        index: 20,
         question: "Which actor plays himself in Zombieland?",
         answers: [
            { option: "Bill Murray", correct: true},
@@ -257,6 +288,7 @@ const questions = [
     },
 
     {
+        index: 21,
         question: "Which movie was wrongly declared the winner of the 2017 edition of the oscars?",
         answers: [
            { option: "Moonlight", correct: false},
@@ -267,6 +299,7 @@ const questions = [
     },
 
     {
+        index: 22,
         question: "Which movie was roughly based on the Battle of Thermopylae?",
         answers: [
            { option: "Braveheart", correct: false},
@@ -277,6 +310,7 @@ const questions = [
     },
 
     {
+        index: 23,
         question: "Which instrument does Milles Teller play in Whiplash?",
         answers: [
            { option: "Piano", correct: false},
@@ -287,6 +321,7 @@ const questions = [
     },
 
     {
+        index: 24,
         question: "Which is the highest grossing picture of all time, when taking inflation into account?",
         answers: [
            { option: "Ben Hur", correct: false},
@@ -297,6 +332,7 @@ const questions = [
     },
 
     {
+        index: 25,
         question: "Which become the first foreign movie to win Best Picture at the Oscars?",
         answers: [
            { option: "Parasite", correct: true},
@@ -307,6 +343,7 @@ const questions = [
     },
 
     {
+        index: 26,
         question: "Which holiday is the subject of Disney's Coco?",
         answers: [
            { option: "Independance Day", correct: false},
@@ -317,6 +354,7 @@ const questions = [
     },
 
     {
+        index: 27,
         question: "Who wrote the score for The Good, The Bad and the Ugly?",
         answers: [
            { option: "John Williams", correct: false},
@@ -327,6 +365,7 @@ const questions = [
     },
 
     {
+        index: 28,
         question: "In Seven, what was in the Box?",
         answers: [
            { option: "The head of Det. Mills wife", correct: true},
@@ -337,6 +376,7 @@ const questions = [
     },
 
     {
+        index: 29,
         question: "What is the first rule of Fight Club?",
         answers: [
            { option: "Bring Your Own Booze", correct: false},
