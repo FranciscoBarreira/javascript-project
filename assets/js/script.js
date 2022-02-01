@@ -278,7 +278,7 @@ const questions = [
 
     {
         index: 25,
-        question: "Which become the first foreign movie to win Best Picture at the Oscars?",
+        question: "Which became the first foreign movie to win Best Picture at the Oscars?",
         answers: [
            { option: "Parasite", correct: true},
            { option: "Oldboy", correct: false},
@@ -361,9 +361,22 @@ function startQuiz(index) {
     answerThree.value = questions[index].answers[2].correct;
     answerFour.value = questions[index].answers[3].correct;
   
-    
+
+   
 }
-  
+
+function checkAnswer() {  
+ document.getElementById("answers-displayed").addEventListener("click", function(e) {
+   const userChoice = e.target;
+
+   let correctAnswer = userChoice.dataset.answers === true 
+
+   if (correctAnswer){
+       alert("You Got it Right!");
+   }  
+ })
+}
+
 if (quiz) {
     startQuiz("0");
 }

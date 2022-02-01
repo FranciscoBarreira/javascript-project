@@ -170,7 +170,7 @@ footer li:hover {
     background-color: rgba(218, 165, 32, 0.6);
 }
 
-.answers{
+.answers-displayed{
     justify-content:center;
     align-items:center;
     display:flex;
