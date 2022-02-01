@@ -149,7 +149,6 @@ footer li:hover {
 
 .quiz-buttons {
     background: url("../images/movie-background.jpg") no-repeat center center;
-    height: 600px;
     background-size: cover;
     padding: 150px;
 }
@@ -178,7 +177,11 @@ footer li:hover {
 }
 
 .next {
-    float: right;
+    float:right;
+}
+
+.button-display {
+    display: inline-block;
 }
 
 .home-button {
@@ -234,17 +237,78 @@ footer li:hover {
 .results {
    color: white;
    font-weight: bold;
-
+   display:inline-grid;
 }
 
 .results-right {
-    float: right;
+    float:right;
 }
 
 #correct {
     color: green;
+    text-align:center;
 }
 
 #incorrect {
     color:red;
+    text-align:center;
+}
+
+
+@media screen and (max-width: 902px) {
+  
+
+    .answers-displayed{
+      display: inline-grid; 
+        
+    }
+
+    .right-button {
+       
+        margin:0;
+    }
+    
+    .left-button {
+        
+        margin:0;
+    }
+    
+   
+
+    .results-right {
+        float:right;
+    }
+     
+}
+
+@media screen and (max-width: 700px) {
+   
+    .answers-displayed{
+      display: inline-grid; 
+        
+    }
+
+    .right-button {
+       
+        margin:0;
+    }
+    
+    .left-button {
+        
+        margin:0;
+    }
+    
+   
+
+    .results-right {
+        float:right;
+    }
+
+    #question-displayed {
+        color: white;
+        margin: 10px 10px 10px 10px;
+        font-size: 2rem;
+        text-align: center;
+    }
+     
 }
