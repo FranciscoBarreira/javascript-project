@@ -361,25 +361,29 @@ function startQuiz(index) {
     answerThree.value = questions[index].answers[2].correct;
     answerFour.value = questions[index].answers[3].correct;
   
-
    
-}
-
-function checkAnswer() {  
- document.getElementById("answers-displayed").addEventListener("click", function(e) {
-   const userChoice = e.target;
-
-   let correctAnswer = userChoice.dataset.answers === true 
-
-   if (correctAnswer){
-       alert("You Got it Right!");
-   }  
- })
+   
 }
 
 if (quiz) {
     startQuiz("0");
 }
+
+function checkAnswer() {  
+ document.getElementById("answers-displayed").addEventListener("click", function(e) {
+   
+   const userChoice = e.target;
+   console.log(e.target);
+   let correctAnswer = userChoice.value === true 
+
+   if (correctAnswer){
+       alert("You Got it Right!");
+       userChoice.style.color="green";
+   }  
+ })
+}
+
+checkAnswer()
   
 const next = document.getElementsByClassName('next')[0];
 var index = 0;
