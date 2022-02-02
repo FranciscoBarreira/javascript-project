@@ -381,14 +381,27 @@ function checkAnswer() {
        alert("You Got it Right!");
        selectBox.style.backgroundColor ="green";
        console.log('right')
+       incrementRight()
    }
    else {
        console.log('wrong')
+       incrementWrong()
    }
  })
 }
 
 checkAnswer()
+
+function incrementRight() {
+
+    let previousScore = parseInt(document.getElementById("correct").innerText);
+    document.getElementById("correct").innerText = ++previousScore;
+}
+
+function incrementWrong() {
+    let previousScore = parseInt(document.getElementById("incorrect").innerText);
+    document.getElementById("incorrect").innerText = ++previousScore;
+}
   
 const next = document.getElementsByClassName('next')[0];
 var index = 0;
@@ -400,7 +413,7 @@ next.addEventListener("click", () => {
         startQuiz(index);
         
     } else {
-        return window.location.assign('and.html')
+        return window.location.assign('end.html')
     }
   
 })
