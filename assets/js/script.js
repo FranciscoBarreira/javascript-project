@@ -374,9 +374,9 @@ function checkAnswer() {
    
    const userChoice = e.target;
    console.log(e.target);
-   let correctAnswer = userChoice.value === true 
+   let correctAnswer = userChoice.dataset.value 
 
-   if (correctAnswer){
+   if (correctAnswer == true){
        alert("You Got it Right!");
        userChoice.style.color="green";
    }  
