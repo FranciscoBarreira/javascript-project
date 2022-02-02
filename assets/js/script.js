@@ -372,14 +372,19 @@ if (quiz) {
 function checkAnswer() {  
  document.getElementById("answers-displayed").addEventListener("click", function(e) {
    
-   const userChoice = e.target;
-   console.log(e.target);
-   let correctAnswer = userChoice.dataset.value 
+   const userChoice = e.target.value;
+   console.log(userChoice);
+   const selectBox = e.target
+   
 
-   if (correctAnswer == true){
+   if (userChoice === "true") {
        alert("You Got it Right!");
-       userChoice.style.color="green";
-   }  
+       selectBox.style.backgroundColor ="green";
+       console.log('right')
+   }
+   else {
+       console.log('wrong')
+   }
  })
 }
 
@@ -395,7 +400,7 @@ next.addEventListener("click", () => {
         startQuiz(index);
         
     } else {
-        return window.location.assign('x/html')
+        return window.location.assign('and.html')
     }
   
 })
