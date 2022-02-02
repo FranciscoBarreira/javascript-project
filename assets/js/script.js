@@ -156,7 +156,7 @@ const questions = [
 
     {
         index: 14,
-        question: "Which is the highest rated movie of all time, accoreding to Rotten Tomatoes?",
+        question: "Which is the highest rated movie of all time, according to Rotten Tomatoes?",
         answers: [
            { option: "It happened One Night", correct: true},
            { option: "Citizen kane", correct: false},
@@ -396,6 +396,9 @@ function incrementRight() {
 
     let previousScore = parseInt(document.getElementById("correct").innerText);
     document.getElementById("correct").innerText = ++previousScore;
+    let endScore = parseInt(document.getElementById("end-result").innerText);
+    document.getElementById("end-result").innerText = ++endScore;
+    console.log("end-result");
 }
 
 function incrementWrong() {
@@ -413,6 +416,7 @@ next.addEventListener("click", () => {
         startQuiz(index);
         
     } else {
+    
         return window.location.assign('end.html')
     }
   
