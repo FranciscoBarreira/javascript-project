@@ -334,91 +334,93 @@ const questions = [
 ]
 
 
-var quiz = true
 
-function startQuiz(index) {
-  
-    const questionDisplayed = document.getElementById("question-displayed");
-  
+let questionDisplayed = document.getElementById("question-displayed");
+let answerOne = document.getElementById("answer-one");
+let answerTwo = document.getElementById("answer-two");
+let answerThree = document.getElementById("answer-three");
+let answerFour = document.getElementById("answer-four");
+const nextBtn = document.getElementById('next-btn');
+let index = 0, score = 0;
+
+
+function startQuiz() {
+    index = 0;
+    score = 0;
+    addEventListeners();
+    showNextQuestion();
+}
+
+function resetOptionColors() {
+    answerOne.style.backgroundColor = 'goldenrod';
+    answerTwo.style.backgroundColor = 'goldenrod';
+    answerThree.style.backgroundColor = 'goldenrod';
+    answerFour.style.backgroundColor = 'goldenrod';
+}
+
+function toggleOptions(disableState) {
+    answerOne.disabled = disableState;
+    answerTwo.disabled = disableState;
+    answerThree.disabled = disableState;
+    answerFour.disabled = disableState;
+}
+
+function showNextQuestion() {
+
+    resetOptionColors()
+    toggleOptions(false)
+    nextBtn.style.display = "none";
+    // Display question
     questionDisplayed.innerText = questions[index].question;
-  
-    
-    const answerOne = document.getElementById("answer-one");
-    const answerTwo = document.getElementById("answer-two");
-    const answerThree = document.getElementById("answer-three");
-    const answerFour = document.getElementById("answer-four");
-  
-  
-    
+
+    // Display options
     answerOne.innerText = questions[index].answers[0].option;
     answerTwo.innerText = questions[index].answers[1].option;
     answerThree.innerText = questions[index].answers[2].option;
     answerFour.innerText = questions[index].answers[3].option;
-  
-   
+
     answerOne.value = questions[index].answers[0].correct;
     answerTwo.value = questions[index].answers[1].correct;
     answerThree.value = questions[index].answers[2].correct;
     answerFour.value = questions[index].answers[3].correct;
-  
-   
-   
+
+    index++;
+    if(index > 29) {
+        return window.location.assign('end.html');
+    }
 }
 
-if (quiz) {
-    startQuiz("0");
+
+function addEventListeners() {
+    answerOne.addEventListener("click",checkAnswer);
+    answerTwo.addEventListener("click",checkAnswer);
+    answerThree.addEventListener("click",checkAnswer);
+    answerFour.addEventListener("click",checkAnswer);
+
+    nextBtn.addEventListener("click",  showNextQuestion);
 }
 
-function checkAnswer() {  
- document.getElementById("answers-displayed").addEventListener("click", function(e) {
-   
-   const userChoice = e.target.value;
-   console.log(userChoice);
-   const selectBox = e.target
-   
 
-   if (userChoice === "true") {
-       alert("You Got it Right!");
+function checkAnswer(event) {
+    nextBtn.style.display = "block";
+    toggleOptions(true)
+   const isCorrectAnswer = event.target.value === 'true';
+   const selectBox = event.target;
+
+
+   if (isCorrectAnswer) {
+     
        selectBox.style.backgroundColor ="green";
-       console.log('right')
-       incrementRight()
+       incrementScore();
    }
    else {
-       console.log('wrong')
-       incrementWrong()
+        selectBox.style.backgroundColor ="red";
    }
- })
 }
 
-checkAnswer()
 
-function incrementRight() {
-
-    let previousScore = parseInt(document.getElementById("correct").innerText);
-    document.getElementById("correct").innerText = ++previousScore;
-    let endScore = parseInt(document.getElementById("end-result").innerText);
-    document.getElementById("end-result").innerText = ++endScore;
-    console.log("end-result");
+function incrementScore() {
+    document.getElementById("correct").innerText = ++score;
 }
 
-function incrementWrong() {
-    let previousScore = parseInt(document.getElementById("incorrect").innerText);
-    document.getElementById("incorrect").innerText = ++previousScore;
-}
-  
-const next = document.getElementsByClassName('next')[0];
-var index = 0;
-  
-next.addEventListener("click", () => {
-    
-    if (index < 29) {
-        index++;
-        startQuiz(index);
-        
-    } else {
-    
-        return window.location.assign('end.html')
-    }
-  
-})
-
+startQuiz()
