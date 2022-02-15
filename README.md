@@ -30,13 +30,11 @@ The link to the Github repository can be found [here.](https://github.com/Franci
 [Features](#features)   
 
    - [Logo](#logo)
-   - [Navigation Menu](#navigation-menu)
    - [Page Image](#page-image) 
-   - [Statement Section](#statement-section)
-   - [Selling Points Section](#selling-points-section)
+   - [Quiz Section](#quiz-section)
+   - [End Results Section](#ending-results-section)
    - [Footer](#footer)  
-   - [How To Play Page](#how-to-play-page)
-   - [Sign Up Page](#sign-up-page)
+
 
 [Testing](#testing)   
 
@@ -63,21 +61,20 @@ The link to the Github repository can be found [here.](https://github.com/Franci
 <a name="user-requirements"></a>
 
 - The website should be easy to navigate
-- All useful information about the game should be on display
-- Signup should be accessible from any page
-- The website's visuals should be enticing 
-- It should be easy to understand what the game is
-- External links should be opened in a different window 
+- Restarting the Quiz should be intuitive
+- The right answer should turn green or red depending on whether it is right or wrong
+- The website's visuals should be centered around cinema
+- The number of right answers should be shown at the end
 - The website should adapt to different screen sizes on different devices
 
 
 ### User Stories
  <a name="user-stories"></a>
 
-- I want the website to visually transmit the idea of the game 
-- I want the text to be clean legible
-- I want to know the main features of the game
-- I want a way to start playing the game immediately
+- I want the website to visually transmit the art of cinema 
+- I want the text to be clean and legible
+- I want to know how well i did in the quiz
+- I want a way to restart the quiz in case I feel I can do better
 
 ## Design
  <a name="design"></a>
@@ -88,12 +85,12 @@ The link to the Github repository can be found [here.](https://github.com/Franci
 <a name="images"></a>
 
 
-All the images resemble the the first person shooter genre, while respecting the colour scheme of the website. They were taken from unsplash.com
+The dark image that serves as a background for all the pages, including the quiz, was taken from unsplash.com and is meant to contrast with the gold, creating a color palette that is usually associated with the movie industry.
 
 ### Colour Scheme 
 <a name="colour-scheme"></a>
 
-Apart from background images, the main colours used were chocolate rgb(210,105,30), white rgb(255,255,255) and grey rgb(102,101,101). The chocolate was mostly used as a background color to contrast the white text and the background images. Grey was used with opacity in the text overlays present in all of the pages. White was used for plain text. 
+Apart from background images, the main colours used were goldenrod rgb(218,165,32), white rgb(255,255,255), green rgb(0,128,0) and red rgb(255,0,0). Red and green were used for right or wrong answers, while white was used for the text. For the containers and backgrounds of both the heading and footer, goldenrod was the colour chosen. 
 
 ### Fonts 
 <a name="fonts"></a>
@@ -108,68 +105,44 @@ Tittillium Web is used for the headings due to its visual appeal. The rest of th
 ### Logo
 <a name="logo"></a>
   
-The top of the page includes the logo for The Arena that is present in all of the pages. This is meant to work as a constant reminder of the name of the game for those who are yet unfamiliar with it.
+At the top of the page lies the heading containing the Test Your Movie Knowledge logo. It is a constant in every page and serves the purpose of maintaining visual consistency.
 
-![logo image](/assets/images/logo.png "logo")
+![logo image](/assets/images/home-quiz.png "logo")
 
-
-### Navigation Menu 
-<a name="navigation-menu"></a>
-
-The navigation menu consists of links to all of the website's pages (home, how to play and sign up). It is a feature in every single one of them, to make navigation easy and intuitive, thus promoting a good user experience.
-
-![navigation bar image](/assets/images/navbar.png "navbar")
 
 
 ### Page Image
 <a name="page-image"></a>
 
-This image takes center stage in all the pages to entice potential players, while making the website maintain a clean look. It speaks of the type of game The Arena is, and contains the motto for the game, "100 players walk in. Only one walks out." There's also a call to action in the form of a pre-order message that links to the sign up page.
-
-![arena image](/assets/images/headstatement.png "arena image")
-
-### Statement Section
-<a name="statement-section"></a>
-
-This section is a short one. It contains text that supports the image above, briefly explaining what the genre of the game is. It also immediately states that the gameplay in The Arena differs form other battle royale games, as a way to grab the attention of potential players.
-
-![arena statement](/assets/images/statement.png "arena statement")
+As shown in the image above, the home page contains two small containers, "Your Goals" and "Start Quiz". The first contains the information on how many right answers it would take to reach a certain tier. Users can choose to skip that information and just start the quiz right away, instead. 
 
 
-### Selling Points Section
-<a name="selling-points-section"></a>
 
-The selling points section contains more detailed information about the main features of The Arena. It is comprised of short blocks of text spread out across the page. The main objective is to give potential players a better picture of what the game is. 
+### Quiz Section
+<a name="quiz-section"></a>
 
-The section contains four blocks of text, two of which float left, with the remaining two floating right. This styling option makes for a cleaner section, in which there is never too much information clustered in one place. 
+This is the main page of the website. It is where users will take part in the quiz. It consists of a quiz container, that holds both the questions and the answers, and a home button underneath so that the home page is always within reach. On the bottom, there is a counter so users can know how many right answers they have so far. When a user clicks the right answer, it turns green, otherwise, it turns red. At that point, a next button (which is hidden by default), shows up. By clicking it, the next question will appear, the right answers counter will update, and the colors(red or green) will disappear.   
 
-![selling points section top](/assets/images/sellingpointsone.png "selling points")
-![selling points section bottom](/assets/images/sellingpointstwo.png "selling points bottom")
+![quiz](/assets/images/quiz.png "quiz")
+
+
+### End Results Section
+<a name="end-results-section"></a>
+
+After clicking the next button on the final question, the whole quiz container will be hidden, and the final results container will be dispolayed. It contains the final number of right answers out of 30, and it reminds the user of how many it was required to be in each tier. Finally, there is a home and a start the quiz button. 
+
+![final results](/assets/images/end.png "final results")
+
 
 ### Footer
 <a name="footer"></a>
 
-This is where users can find all the social media links, as well as The Arena's official Twitch channel and email. The six icons appear in one row in white to a chocolate colour background, and become opaque when the user hovers over them. Finally, there are aria labels in all of the links for screen readers. 
+This is where users can find all the social media links. The background color is Ggoldenrod to maintain visual consistency. There are aria labels in all of the links for screen readers. 
 
 All the icons were taken from "Font Awesome".
 
-![footer section](/assets/images/footer.png "footer")
+![footer section](/assets/images/footer-quiz.png "footer")
 
-### How to Play page
-<a name="how-to-play-page"></a>
-
-For players who are not very familiar with the Battle Royale genre, the how to play page provides a list of five steps to make sense of how the game works. Stylewise, it retains the colour scheme and some of the styling of the home page.
-
-![how to play top](/assets/images/instructionsone.png "how to play")
-![how to play bottom](/assets/images/instructionstwo.png "how to play bottom")
-
-
-### Sign Up Page
-<a name="sign-up-page"></a>
-
-For potential players who want to play the game, or just receive updates about it via email. Apart from all the usual fields such as username and password, there is also a dropdown list that gives users three options to sign up. 
-
-![sign up page](/assets/images/signup.png "sign up")
 
 ## Testing
 <a name="testing"></a>
