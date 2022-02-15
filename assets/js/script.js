@@ -331,6 +331,19 @@ const questions = [
         ]
     },
 
+    {
+        index: 30,
+        question: "What is the first rule of Fight Club 2 ?",
+        answers: [
+           { option: "Bring Your Own Booze", correct: false},
+           { option: "You do not talk about Fight Club", correct: true},
+           { option: "Phones must be in silent mode", correct: false},
+           { option: "You must show a negative Covid test", correct: false}
+        ]
+    },
+
+    
+
 ];
 
 
@@ -367,6 +380,7 @@ function toggleOptions(disableState) {
 
 function showNextQuestion() {
 
+    console.log('new question function', index)
     resetOptionColors();
     toggleOptions(false);
     nextBtn.style.display = "none";
@@ -385,13 +399,13 @@ function showNextQuestion() {
     answerFour.value = questions[index].answers[3].correct;
 
     index++;
-    if(index > 29) {
-        let hideQuiz = document.getElementById('entire-container');
-        hideQuiz.classList.add('hide');
-        let showResults = document.getElementById('final-results');
-        showResults.classList.remove('hide');
-
+    document.getElementById("correct").innerHTML = score;
+    console.log(questions.length)
+    if(index >30) {
+        endQuiz();
+       
     }
+   
 }
 
 
@@ -415,17 +429,25 @@ function checkAnswer(event) {
    if (isCorrectAnswer) {
      
        selectBox.style.backgroundColor ="green";
-       incrementScore();
+       score++;
+       
+     
    }
    else {
         selectBox.style.backgroundColor ="red";
         
+       
    }
 }
 
-
-function incrementScore() {
-    document.getElementById("correct").innerText = ++score;
+function endQuiz() {
+    const finalScore = score;
+    let hideQuiz = document.getElementById('entire-container');
+    hideQuiz.classList.add('hide');
+    let showResults = document.getElementById('final-results');
+    showResults.classList.remove('hide');
+    document.getElementById('user-score').innerHTML = finalScore;
 }
+
 
 startQuiz();
