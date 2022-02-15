@@ -380,7 +380,7 @@ function toggleOptions(disableState) {
 
 function showNextQuestion() {
 
-    console.log('new question function', index)
+    
     resetOptionColors();
     toggleOptions(false);
     nextBtn.style.display = "none";
@@ -400,7 +400,7 @@ function showNextQuestion() {
 
     index++;
     document.getElementById("correct").innerHTML = score;
-    console.log(questions.length)
+    
     if(index >30) {
         endQuiz();
        
