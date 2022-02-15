@@ -1,108 +1,247 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-Welcome FranciscoBarreira,
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
-
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
-
-## Gitpod Reminders
-
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
-
-`python3 -m http.server`
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+## The Movie Quiz
 
 ------
 
-## Release History
+This project is a fully functioning movie quiz, where users can test their knowledge about the seventh art. The website contains the quiz as well as a "Your Goals" section that sets a target for the number of questions answered right. Once the quiz is over, a container is displayed giving information about how the user did.  
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+The link to the deployed website can be found [here.](https://franciscobarreira.github.io/javascript-project/)
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+The link to the Github repository can be found [here.](https://github.com/FranciscoBarreira/javascript-project/)
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+![mockup site generator image](/assets/images/mockup-quiz.png "mockup preview")
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+## Table of Contents 
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+[User Experience](#user-experience)
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+   - [User Requirements](#user-requirements)
+   - [User Stories](#user-stories)
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+[Design](#design)   
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+   - [Images](#images)
+   - [Colour Scheme](#colour-scheme)
+   - [Fonts](#fonts)
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+[Features](#features)   
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+   - [Logo](#logo)
+   - [Navigation Menu](#navigation-menu)
+   - [Page Image](#page-image) 
+   - [Statement Section](#statement-section)
+   - [Selling Points Section](#selling-points-section)
+   - [Footer](#footer)  
+   - [How To Play Page](#how-to-play-page)
+   - [Sign Up Page](#sign-up-page)
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+[Testing](#testing)   
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+   - [General Testing](#general-testing)
+   - [Validator Testing](#validator-testing)
+   - [Responsiveness Testing](#responsiveness-testing)
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+[Site Deployment](#site-deployment) 
+
+[Credits](#credits)   
+
+   - [Media](#media)
+   - [Content](#content) 
+  
+
+
+## User Experience 
+<a name="user-experience"></a>
 
 ------
 
-## FAQ about the uptime script
 
-**Why have you added this script?**
+### User Requirements 
+<a name="user-requirements"></a>
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+- The website should be easy to navigate
+- All useful information about the game should be on display
+- Signup should be accessible from any page
+- The website's visuals should be enticing 
+- It should be easy to understand what the game is
+- External links should be opened in a different window 
+- The website should adapt to different screen sizes on different devices
 
-**How will this affect me?**
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+### User Stories
+ <a name="user-stories"></a>
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+- I want the website to visually transmit the idea of the game 
+- I want the text to be clean legible
+- I want to know the main features of the game
+- I want a way to start playing the game immediately
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+## Design
+ <a name="design"></a>
 
-**So….?**
+ ------
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+### Images 
+<a name="images"></a>
 
-**Can I opt out?**
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+All the images resemble the the first person shooter genre, while respecting the colour scheme of the website. They were taken from unsplash.com
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+### Colour Scheme 
+<a name="colour-scheme"></a>
 
-**Anything more?**
+Apart from background images, the main colours used were chocolate rgb(210,105,30), white rgb(255,255,255) and grey rgb(102,101,101). The chocolate was mostly used as a background color to contrast the white text and the background images. Grey was used with opacity in the text overlays present in all of the pages. White was used for plain text. 
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+### Fonts 
+<a name="fonts"></a>
 
----
+Tittillium Web is used for the headings due to its visual appeal. The rest of the text is in Lato, a font that improves readability.
 
-Happy coding!
+
+## Features  
+<a name="features"></a>
+------
+
+### Logo
+<a name="logo"></a>
+  
+The top of the page includes the logo for The Arena that is present in all of the pages. This is meant to work as a constant reminder of the name of the game for those who are yet unfamiliar with it.
+
+![logo image](/assets/images/logo.png "logo")
+
+
+### Navigation Menu 
+<a name="navigation-menu"></a>
+
+The navigation menu consists of links to all of the website's pages (home, how to play and sign up). It is a feature in every single one of them, to make navigation easy and intuitive, thus promoting a good user experience.
+
+![navigation bar image](/assets/images/navbar.png "navbar")
+
+
+### Page Image
+<a name="page-image"></a>
+
+This image takes center stage in all the pages to entice potential players, while making the website maintain a clean look. It speaks of the type of game The Arena is, and contains the motto for the game, "100 players walk in. Only one walks out." There's also a call to action in the form of a pre-order message that links to the sign up page.
+
+![arena image](/assets/images/headstatement.png "arena image")
+
+### Statement Section
+<a name="statement-section"></a>
+
+This section is a short one. It contains text that supports the image above, briefly explaining what the genre of the game is. It also immediately states that the gameplay in The Arena differs form other battle royale games, as a way to grab the attention of potential players.
+
+![arena statement](/assets/images/statement.png "arena statement")
+
+
+### Selling Points Section
+<a name="selling-points-section"></a>
+
+The selling points section contains more detailed information about the main features of The Arena. It is comprised of short blocks of text spread out across the page. The main objective is to give potential players a better picture of what the game is. 
+
+The section contains four blocks of text, two of which float left, with the remaining two floating right. This styling option makes for a cleaner section, in which there is never too much information clustered in one place. 
+
+![selling points section top](/assets/images/sellingpointsone.png "selling points")
+![selling points section bottom](/assets/images/sellingpointstwo.png "selling points bottom")
+
+### Footer
+<a name="footer"></a>
+
+This is where users can find all the social media links, as well as The Arena's official Twitch channel and email. The six icons appear in one row in white to a chocolate colour background, and become opaque when the user hovers over them. Finally, there are aria labels in all of the links for screen readers. 
+
+All the icons were taken from "Font Awesome".
+
+![footer section](/assets/images/footer.png "footer")
+
+### How to Play page
+<a name="how-to-play-page"></a>
+
+For players who are not very familiar with the Battle Royale genre, the how to play page provides a list of five steps to make sense of how the game works. Stylewise, it retains the colour scheme and some of the styling of the home page.
+
+![how to play top](/assets/images/instructionsone.png "how to play")
+![how to play bottom](/assets/images/instructionstwo.png "how to play bottom")
+
+
+### Sign Up Page
+<a name="sign-up-page"></a>
+
+For potential players who want to play the game, or just receive updates about it via email. Apart from all the usual fields such as username and password, there is also a dropdown list that gives users three options to sign up. 
+
+![sign up page](/assets/images/signup.png "sign up")
+
+## Testing
+<a name="testing"></a>
+
+------
+
+### General Testing
+<a name="general-testing"></a>
+
+Lighthouse was used to test Performance, Accessibility, Best Practices and SEO. The results were the following:
+
+![lighthouse test](/assets/images/lighthouse.png "lighthouse test")
+
+The colors and fonts are very easy to read all across the website.
+
+### Validator Testing
+<a name="validator-testing"></a>
+
+HTML- No errors were shown when put through the [HTML Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Ffranciscobarreira.github.io%2FHTML-CSS-Project%2Findex.html)
+
+CSS- No errors were shown when put through the [CSS Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Ffranciscobarreira.github.io%2FHTML-CSS-Project%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+
+### Responsiveness Testing
+<a name="responsiveness-testing"></a>
+
+The website responsiveness was tested using Chrome Dev Tools and was physically tested on a Samsung S20. It generally responded well to the different devices, however, there was a need to implement some changes, such as:
+
+-Reducing the Logo font size to keep it from overflowing into the navigation bar
+
+-Increasing the Statement Height to keep text from spilling over
+
+-Decreasing the width of the form to fot smaller devices
+
+-In the selling points section of the website, there are four blocks of text, with two of them floating left and the other two floating right. In smaller screens, they form a column instead, with the four of them appearing below one another. 
+
+
+
+
+## Site Deployment
+<a name="site-deployment"></a>
+
+------
+
+This site was deployed to GitHub pages. The steps to deploy it were:
+
+-In the GitHub repository, click on on settings 
+
+-Scroll down to Github pages
+
+-From the source section drop-down menu, select Main 
+
+-After all these steps are followed successfully the page will refresh and provide a link to the deployed website.
+
+
+
+## Credits
+<a name="credits"></a>
+
+------
+
+### Media
+<a name="media"></a>
+
+All the images used in the website were taken directly from Unsplash.com, including the one that is used as a background in the logo.
+
+All the icons were taken from "Font Awesome".
+
+### Content
+ <a name="content"></a>
+
+For this project, the following sources of information were used:
+
+-Stackoverflow for how to create an HTML button that acts like a link
+
+-The idea for the text overlay used in both the home and how to play pages was taken from the Love Running walkthrough project.

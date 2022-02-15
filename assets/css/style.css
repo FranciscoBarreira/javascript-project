@@ -237,12 +237,9 @@ footer li:hover {
 .results {
    color: white;
    font-weight: bold;
-   display:inline-grid;
+   text-align: center;
 }
 
-.results-right {
-    float:right;
-}
 
 #correct {
     color: green;
@@ -275,9 +272,7 @@ footer li:hover {
     
    
 
-    .results-right {
-        float:right;
-    }
+   
      
 
     .score-discription {
@@ -310,10 +305,7 @@ footer li:hover {
     
    
 
-    .results-right {
-        float:right;
-    }
-
+    
     #question-displayed {
         color: white;
         margin: 10px 10px 10px 10px;
@@ -381,10 +373,7 @@ footer li:hover {
     
    
 
-    .results-right {
-        float:right;
-    }
-
+    
     #question-displayed {
         color: white;
         margin: 10px 10px 10px 10px;

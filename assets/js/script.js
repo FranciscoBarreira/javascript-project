@@ -386,10 +386,10 @@ function showNextQuestion() {
 
     index++;
     if(index > 29) {
-        let hideQuiz = document.getElementById('entire-container')
-        hideQuiz.classList.add('hide')
-        let showResults = document.getElementById('final-results')
-        showResults.classList.remove('hide')
+        let hideQuiz = document.getElementById('entire-container');
+        hideQuiz.classList.add('hide');
+        let showResults = document.getElementById('final-results');
+        showResults.classList.remove('hide');
 
     }
 }
@@ -419,6 +419,7 @@ function checkAnswer(event) {
    }
    else {
         selectBox.style.backgroundColor ="red";
+        
    }
 }
 
