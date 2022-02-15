@@ -10,7 +10,7 @@
 </head>
 <body>
     <h1 class= "heading"> Test Your Movie Knowledge</h1>
-    <div class = "quiz-buttons">
+    <div class = "quiz-buttons" id="entire-container">
         <div class="quiz-container">
             <div id= "question-displayed"> 
               Question
@@ -32,7 +32,23 @@
             <p class="results results-right">You answered <span id="incorrect">0</span> questions wrong</p>
         </div>  
     </div>
-    <div id="results"></div>
+    <div class = "score-goals hide" id="final_results">
+        <div class="score-discription">
+            <h2>Thank You For Participating!</h2>
+            <h3> You got <span id="end-result">0</span> out of 30!</h3>
+            <p>Over 15 - You are a fanatic of the seventh art</p>
+            <p>Between 10 and 15 - You definitely know your cinema </p>
+            <p>Between 5 and 10 - You seem to have some basic notions of Cinema</p>
+            <p>Between 0 and 5 - You seem to prefer TV shows</p>
+            <a href="index.html" class="scoregoals-buttons"> Home Page
+                <br>
+                <i class="fas fa-home"></i></a> 
+            <a href="quiz.html" class="scoregoals-buttons scoregoals-right launch-quiz"> Restart 
+                <br>
+                <i class="fas fa-play"></i></a>   
+        </div>
+      
+    </div>
            
     <footer>
         <div>

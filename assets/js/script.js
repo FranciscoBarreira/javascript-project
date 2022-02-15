@@ -83,7 +83,7 @@ const questions = [
         answers: [
            { option: "Oscar Isacc", correct: false},
            { option: "Cillian Murphy", correct: false},
-           { option: "Adamm Driver", correct: false},
+           { option: "Adam Driver", correct: false},
            { option: "Eddie Redmayne", correct: true}
         ]
     },
@@ -386,7 +386,11 @@ function showNextQuestion() {
 
     index++;
     if(index > 29) {
-        return window.location.assign('end.html');
+        let hideQuiz = document.getElementById('entire-container')
+        hideQuiz.classList.add('hide')
+        let showResults = document.getElementById('final-results')
+        showResults.classList.remove('hide')
+
     }
 }
 
