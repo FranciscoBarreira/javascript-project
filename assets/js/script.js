@@ -331,7 +331,7 @@ const questions = [
         ]
     },
 
-]
+];
 
 
 
@@ -367,8 +367,8 @@ function toggleOptions(disableState) {
 
 function showNextQuestion() {
 
-    resetOptionColors()
-    toggleOptions(false)
+    resetOptionColors();
+    toggleOptions(false);
     nextBtn.style.display = "none";
     // Display question
     questionDisplayed.innerText = questions[index].question;
@@ -407,7 +407,7 @@ function addEventListeners() {
 
 function checkAnswer(event) {
     nextBtn.style.display = "block";
-    toggleOptions(true)
+    toggleOptions(true);
    const isCorrectAnswer = event.target.value === 'true';
    const selectBox = event.target;
 
@@ -428,4 +428,4 @@ function incrementScore() {
     document.getElementById("correct").innerText = ++score;
 }
 
-startQuiz()
+startQuiz();

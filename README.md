@@ -154,31 +154,35 @@ All the icons were taken from "Font Awesome".
 
 Lighthouse was used to test Performance, Accessibility, Best Practices and SEO. The results were the following:
 
-![lighthouse test](/assets/images/lighthouse.png "lighthouse test")
+![lighthouse test](/assets/images/lighthouse-test.png "lighthouse test")
 
 The colors and fonts are very easy to read all across the website.
 
 ### Validator Testing
 <a name="validator-testing"></a>
 
-HTML- No errors were shown when put through the [HTML Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Ffranciscobarreira.github.io%2FHTML-CSS-Project%2Findex.html)
+HTML- No errors were shown when put through the [HTML Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Ffranciscobarreira.github.io%2Fjavascript-project%2F)
 
-CSS- No errors were shown when put through the [CSS Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Ffranciscobarreira.github.io%2FHTML-CSS-Project%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+CSS- No errors were shown when put through the [CSS Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Ffranciscobarreira.github.io%2Fjavascript-project%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=pt-BR)
+
+JavaScript - No errors were shown when put through JShint validator, as shown in the image below.
+
+![jshint test](/assets/images/jshint.png "jshint test")
 
 ### Responsiveness Testing
 <a name="responsiveness-testing"></a>
 
 The website responsiveness was tested using Chrome Dev Tools and was physically tested on a Samsung S20. It generally responded well to the different devices, however, there was a need to implement some changes, such as:
 
--Reducing the Logo font size to keep it from overflowing into the navigation bar
+-Reducing the Logo font size to keep it from overflowing into the body of the page
 
--Increasing the Statement Height to keep text from spilling over
+-restructuring the quiz answers to keep them from overflowing the container
 
--Decreasing the width of the form to fot smaller devices
+-repositioning the home and next button as they were negatively affecting each other's position in smaller screens  
 
--In the selling points section of the website, there are four blocks of text, with two of them floating left and the other two floating right. In smaller screens, they form a column instead, with the four of them appearing below one another. 
+-making width and margin related adjustments to the scorecard page to prevent it from deforming
 
-
+-making width and margin related adjustments to the hidden div in the quiz page to prevent it from deforming
 
 
 ## Site Deployment
@@ -206,7 +210,7 @@ This site was deployed to GitHub pages. The steps to deploy it were:
 ### Media
 <a name="media"></a>
 
-All the images used in the website were taken directly from Unsplash.com, including the one that is used as a background in the logo.
+The background image used in the website was taken directly from Unsplash.com.
 
 All the icons were taken from "Font Awesome".
 
@@ -215,6 +219,6 @@ All the icons were taken from "Font Awesome".
 
 For this project, the following sources of information were used:
 
--Stackoverflow for how to create an HTML button that acts like a link
+-Stackoverflow and w3schools for various code related doubts
 
--The idea for the text overlay used in both the home and how to play pages was taken from the Love Running walkthrough project.
+-The idea for the increment score functions was initially taken from the Love Math walkthrough project.
