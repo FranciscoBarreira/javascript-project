@@ -27,6 +27,8 @@ The link to the Github repository can be found [here.](https://github.com/Franci
    - [Colour Scheme](#colour-scheme)
    - [Fonts](#fonts)
 
+[Technologies Used](#technologies-used) 
+
 [Features](#features)   
 
    - [Logo](#logo)
@@ -90,12 +92,29 @@ The dark image that serves as a background for all the pages, including the quiz
 ### Colour Scheme 
 <a name="colour-scheme"></a>
 
-Apart from background images, the main colours used were goldenrod rgb(218,165,32), white rgb(255,255,255), green rgb(0,128,0) and red rgb(255,0,0). Red and green were used for right or wrong answers, while white was used for the text. For the containers and backgrounds of both the heading and footer, goldenrod was the colour chosen. 
+Apart from background images, the main colours used were goldenrod rgb(218,165,32), white rgb(255,255,255), green rgb(0,128,0) and red rgb(255,0,0). Red and green were used for right or wrong answers. For the containers and backgrounds of both the heading and footer, goldenrod was the colour chosen. White was used as a background color for the answer buttons, and for the text in the rest of the buttons as well as the logo.  
 
 ### Fonts 
 <a name="fonts"></a>
 
 Tittillium Web is used for the headings due to its visual appeal. The rest of the text is in Lato, a font that improves readability.
+
+## Technoligies Used
+<a name="technologies-used"></a>
+
+------
+
+This site was deployed to GitHub pages. The steps to deploy it were:
+
+-HTML for structural design of the website
+
+-CSS for styling the pages 
+
+-JavaScript for adding functionality to the quiz 
+
+-GitHub for software hosting
+
+-GitPod for development hosting
 
 
 ## Features  
@@ -121,7 +140,7 @@ As shown in the image above, the home page contains two small containers, "Your 
 ### Quiz Section
 <a name="quiz-section"></a>
 
-This is the main page of the website. It is where users will take part in the quiz. It consists of a quiz container, that holds both the questions and the answers, and a home button underneath so that the home page is always within reach. On the bottom, there is a counter so users can know how many right answers they have so far. When a user clicks the right answer, it turns green, otherwise, it turns red. At that point, a next button (which is hidden by default), shows up. By clicking it, the next question will appear, the right answers counter will update, and the colors(red or green) will disappear.   
+This is the main page of the website. It is where users will take part in the quiz. It consists of a quiz container, that holds both the questions and the answers, and a home button underneath so that the home page is always within reach. On the bottom of the quiz container, there is a counter so users can know how many right answers they have so far. When a user clicks the right answer, it turns green, otherwise, it turns red. At that point, a next button (which is hidden by default), shows up. By clicking it, the next question will appear, the right answers counter will update, and the colors(red or green) will disappear.   
 
 ![quiz](/assets/images/quiz.png "quiz")
 
@@ -129,7 +148,7 @@ This is the main page of the website. It is where users will take part in the qu
 ### End Results Section
 <a name="end-results-section"></a>
 
-After clicking the next button on the final question, the whole quiz container will be hidden, and the final results container will be dispolayed. It contains the final number of right answers out of 30, and it reminds the user of how many it was required to be in each tier. Finally, there is a home and a start the quiz button. 
+After clicking the next button on the final question, the whole quiz container will be hidden, and the final results container will be displayed. It contains the final number of right answers out of 15, and it reminds the user of how many it was required to be in each tier. Finally, there is a home and a start the quiz button. 
 
 ![final results](/assets/images/end.png "final results")
 
@@ -137,7 +156,7 @@ After clicking the next button on the final question, the whole quiz container w
 ### Footer
 <a name="footer"></a>
 
-This is where users can find all the social media links. The background color is Ggoldenrod to maintain visual consistency. There are aria labels in all of the links for screen readers. 
+This is where users can find all the social media links. The background color is goldenrod to maintain visual consistency. There are aria labels in all of the links for screen readers. 
 
 All the icons were taken from "Font Awesome".
 

@@ -46,7 +46,7 @@ const questions = [
 
     {
         index: 4,
-        question: "Which actor siad the legendary line 'Hasta la vista, baby'?",
+        question: "Which actor said the legendary line 'Hasta la vista, baby'?",
         answers: [
            { option: "Jackie Chan", correct: false},
            { option: "Sylvester Stallone", correct: false},
