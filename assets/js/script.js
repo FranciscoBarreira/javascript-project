@@ -252,12 +252,14 @@ function checkAnswer(event) {
    if (isCorrectAnswer) {
      
        selectBox.style.backgroundColor ="green";
+       selectBox.style.color = "white"
        score++;
        
      
    }
    else {
         selectBox.style.backgroundColor ="red";
+        selectBox.style.color = "white"
         
        
    }
