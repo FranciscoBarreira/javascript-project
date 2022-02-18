@@ -192,7 +192,12 @@ function resetOptionColors() {
     answerTwo.style.backgroundColor = 'white';
     answerThree.style.backgroundColor = 'white';
     answerFour.style.backgroundColor = 'white';
+    answerOne.style.color = 'goldenrod';
+    answerTwo.style.color = 'goldenrod';
+    answerThree.style.color = 'goldenrod';
+    answerFour.style.color = 'goldenrod';
 }
+
 
 function toggleOptions(disableState) {
     answerOne.disabled = disableState;
