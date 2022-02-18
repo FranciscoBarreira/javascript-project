@@ -31,6 +31,11 @@ h2 {
     background: url("../images/movie-background.jpg") no-repeat center center;
     
     background-size: cover;
+    min-height: calc(100vh - 150px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .start {
@@ -39,7 +44,7 @@ h2 {
     background-color: goldenrod;
     padding: 10px;
     border-radius: 5px;
-    margin: 200px; 
+    margin: 10px; 
     color: white;
     -webkit-appearance: button;
     -moz-appearance: button;
@@ -154,11 +159,12 @@ footer li:hover {
 }
 
 .button {
+    font-size: 1rem;
     background-color: goldenrod;
     width:200px;
     height:50px;
     padding:10px;
-    color: white;
+    color: goldenrod;
     border-radius: 5px;
     margin-bottom: 50px;
     font-family: Lato, "sans-serif";
@@ -166,7 +172,7 @@ footer li:hover {
 
 .quiz-container{
     margin-top: 150px;
-    background-color: rgba(218, 165, 32, 0.6);
+    background-color: goldenrod;
 }
 
 .answers-displayed{
@@ -178,7 +184,10 @@ footer li:hover {
 
 .next {
     float:right;
+    margin: 20px 0px 50px 0px;
+    color: white;
 }
+
 
 .button-display {
     display: inline-block;
@@ -196,10 +205,11 @@ footer li:hover {
     font-family: Lato, "sans-serif";
     font-weight: 300;
     border-radius: 5px;
-    margin-bottom: 50px;
+    margin: 20px 0px 50px 0px;
     -webkit-appearance: button;
     -moz-appearance: button;
     appearance: button;
+    
 }
 
 .nav-buttons {
@@ -238,6 +248,8 @@ footer li:hover {
    color: white;
    font-weight: bold;
    text-align: center;
+   font-size: 1.2rem;
+   padding: 40px;
 }
 
 
@@ -270,10 +282,6 @@ footer li:hover {
         margin:0;
     }
     
-   
-
-   
-     
 
     .score-discription {
         background-color: rgba(218, 165, 32, 0.8);
@@ -316,15 +324,17 @@ footer li:hover {
 
     .quiz-container{
         
-        background-color: rgba(218, 165, 32, 0.6);
+        background-color: goldenrod;
         width: 100%;
         margin:0;
+        
     }
     
     .quiz-buttons {
         background: url("../images/movie-background.jpg") no-repeat center center;
         background-size: cover;
         padding: 50px;
+        min-height: calc(100vh - 150px);
     }
 
     .score-discription {
@@ -340,11 +350,10 @@ footer li:hover {
     .scoregoals-buttons {
         font-size: 0.9rem;
         text-decoration: none;
-        background-color: goldenrod;
         padding: 10px;
         border-radius: 5px;
         margin: 15px; 
-        color: white;
+        color: goldenrod;
         -webkit-appearance: button;
         -moz-appearance: button;
         appearance: button;
@@ -384,7 +393,7 @@ footer li:hover {
 
     .quiz-container{
         
-        background-color: rgba(218, 165, 32, 0.6);
+        background-color: goldenrod;
         width: 100%;
         margin:0;
         
@@ -397,11 +406,11 @@ footer li:hover {
     }
 
     .button {
-        background-color: goldenrod;
+       
         width:150px;
         height:50px;
         padding:10px;
-        color: white;
+        color: goldenrod;
         border-radius: 5px;
         margin-bottom: 20px;
         font-family: Lato, "sans-serif";
@@ -503,7 +512,7 @@ footer li:hover {
 
     .quiz-container{
         
-        background-color: rgba(218, 165, 32, 0.6);
+        background-color: goldenrod;
         width: 100%;
         margin:0;
         
@@ -516,11 +525,11 @@ footer li:hover {
     }
 
     .button {
-        background-color: goldenrod;
+       
         width:120px;
         height:50px;
         padding:10px;
-        color: white;
+        color: goldenrod;
         border-radius: 5px;
         margin-bottom: 20px;
         font-family: Lato, "sans-serif";

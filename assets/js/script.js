@@ -13,7 +13,7 @@ const questions = [
 
     {
         index: 1,
-        question: "Which is the highest rated movie of all time, accoreding to IMDB?",
+        question: "Which is the highest rated movie of all time, according to IMDB?",
         answers: [
            { option: "Shawshank Redemption", correct: true},
            { option: "The Godfather", correct: false},
@@ -154,174 +154,9 @@ const questions = [
         ]
     },
 
+
     {
         index: 14,
-        question: "Which is the highest rated movie of all time, according to Rotten Tomatoes?",
-        answers: [
-           { option: "It happened One Night", correct: true},
-           { option: "Citizen kane", correct: false},
-           { option: "The Godfather II", correct: false},
-           { option: "Shawshank Redemption", correct: false}
-        ]
-    },
-
-    {
-        index: 15,
-        question: "Which actor won the most oscars during their career?",
-        answers: [
-           { option: "Tom Hanks", correct: false},
-           { option: "Daniel Day-Lewis", correct: true},
-           { option: "Humphrey Bogart", correct: false},
-           { option: "Mahershala Ali", correct: false}
-        ]
-    },
-
-
-    {
-        index: 16,
-        question: "Which was the first animated movie Disney ever released?",
-        answers: [
-           { option: "Bambi", correct: false},
-           { option: "Snow White", correct: true},
-           { option: "Cinderella", correct: false},
-           { option: "Mickey Mouse", correct: false}
-        ]
-    },
-
-    {
-        index: 17,
-        question: "Which director was once most known for starring in Westerns?",
-        answers: [
-           { option: "Henry Fonda", correct: false},
-           { option: "James Stewart", correct: false},
-           { option: "Pedro Almodovar", correct: false},
-           { option: "Clint Eastwood", correct: true}
-        ]
-    },
-
-    {
-        index: 18,
-        question: "In which movie can you find Robert de Niro asking 'You talkin' to me'?",
-        answers: [
-           { option: "Goodfellas", correct: false},
-           { option: "Rebel Without a Cause", correct: false},
-           { option: "Taxi Driver", correct: true},
-           { option: "My Dinner with Andre", correct: false}
-        ]
-    },
-
-    {
-        index: 19,
-        question: "In Citizen Kane, what does Charles Foster Kane say in his deathbed?",
-        answers: [
-           { option: "If there is a God, give me a sign", correct: false},
-           { option: "Tulips", correct: false},
-           { option: "I'd rather die than watching another minute of this s... ", correct: false},
-           { option: "Rosebud", correct: true}
-        ]
-    },
-
-    {
-        index: 20,
-        question: "Which actor plays himself in Zombieland?",
-        answers: [
-           { option: "Bill Murray", correct: true},
-           { option: "Jonah Hill", correct: false},
-           { option: "Woody Harrelson", correct: false},
-           { option: "Jamie Foxx", correct: false}
-        ]
-    },
-
-    {
-        index: 21,
-        question: "Which movie was wrongly declared the winner of the 2017 edition of the oscars?",
-        answers: [
-           { option: "Moonlight", correct: false},
-           { option: "Roma", correct: false},
-           { option: "La La Land", correct: true},
-           { option: "Moonlight", correct: false}
-        ]
-    },
-
-    {
-        index: 22,
-        question: "Which movie was roughly based on the Battle of Thermopylae?",
-        answers: [
-           { option: "Braveheart", correct: false},
-           { option: "300", correct: true},
-           { option: "Troy", correct: false},
-           { option: "Battle of the Red Cliff", correct: false}
-        ]
-    },
-
-    {
-        index: 23,
-        question: "Which instrument does Milles Teller play in Whiplash?",
-        answers: [
-           { option: "Piano", correct: false},
-           { option: "Trumpet", correct: false},
-           { option: "Drums", correct: true},
-           { option: "Vuvuzela", correct: false}
-        ]
-    },
-
-    {
-        index: 24,
-        question: "Which is the highest grossing picture of all time, when taking inflation into account?",
-        answers: [
-           { option: "Ben Hur", correct: false},
-           { option: "Gone With the Wind", correct: true},
-           { option: "The Wizard of Oz", correct: false},
-           { option: "The Lion King", correct: false}
-        ]
-    },
-
-    {
-        index: 25,
-        question: "Which became the first foreign movie to win Best Picture at the Oscars?",
-        answers: [
-           { option: "Parasite", correct: true},
-           { option: "Oldboy", correct: false},
-           { option: "Memories of Murder", correct: false},
-           { option: "The Lives of Others", correct: false}
-        ]
-    },
-
-    {
-        index: 26,
-        question: "Which holiday is the subject of Disney's Coco?",
-        answers: [
-           { option: "Independance Day", correct: false},
-           { option: "Day of the Dead", correct: true},
-           { option: "Christmas", correct: false},
-           { option: "Thanksgiving", correct: false}
-        ]
-    },
-
-    {
-        index: 27,
-        question: "Who wrote the score for The Good, The Bad and the Ugly?",
-        answers: [
-           { option: "John Williams", correct: false},
-           { option: "Hanz Zimmer", correct: false},
-           { option: "Ennio Morricone", correct: true},
-           { option: "Henry Mancini", correct: false}
-        ]
-    },
-
-    {
-        index: 28,
-        question: "In Seven, what was in the Box?",
-        answers: [
-           { option: "The head of Det. Mills wife", correct: true},
-           { option: "Nothing", correct: false},
-           { option: "Det. Mills Dog", correct: false},
-           { option: "Anthrax", correct: false}
-        ]
-    },
-
-    {
-        index: 29,
         question: "What is the first rule of Fight Club?",
         answers: [
            { option: "Bring Your Own Booze", correct: false},
@@ -331,18 +166,6 @@ const questions = [
         ]
     },
 
-    {
-        index: 30,
-        question: "What is the first rule of Fight Club 2 ?",
-        answers: [
-           { option: "Bring Your Own Booze", correct: false},
-           { option: "You do not talk about Fight Club", correct: true},
-           { option: "Phones must be in silent mode", correct: false},
-           { option: "You must show a negative Covid test", correct: false}
-        ]
-    },
-
-    
 
 ];
 
@@ -365,10 +188,10 @@ function startQuiz() {
 }
 
 function resetOptionColors() {
-    answerOne.style.backgroundColor = 'goldenrod';
-    answerTwo.style.backgroundColor = 'goldenrod';
-    answerThree.style.backgroundColor = 'goldenrod';
-    answerFour.style.backgroundColor = 'goldenrod';
+    answerOne.style.backgroundColor = 'white';
+    answerTwo.style.backgroundColor = 'white';
+    answerThree.style.backgroundColor = 'white';
+    answerFour.style.backgroundColor = 'white';
 }
 
 function toggleOptions(disableState) {
@@ -380,7 +203,10 @@ function toggleOptions(disableState) {
 
 function showNextQuestion() {
 
-    
+    if(index >14) {
+        endQuiz();
+       
+    }
     resetOptionColors();
     toggleOptions(false);
     nextBtn.style.display = "none";
@@ -401,10 +227,7 @@ function showNextQuestion() {
     index++;
     document.getElementById("correct").innerHTML = score;
     
-    if(index >30) {
-        endQuiz();
-       
-    }
+  
    
 }
 
